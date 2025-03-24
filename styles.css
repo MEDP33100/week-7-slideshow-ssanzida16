@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5f5; /* Lavender */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 3rem;
+    color: #6a1b9a; /* Dark purple */
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Slideshow Container */
+  .slideshow-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .slides-container {
+    position: relative;
+    height: 400px;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .caption-container {
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Navigation Buttons */
+  .nav-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  #prevBtn {
+    left: 20px;
+  }
+  
+  #nextBtn {
+    right: 20px;
+  }
+  
+  .nav-btn:hover {
+    background-color: #6a1b9a; /* Dark purple */
+  }
+  
+  .nav-btn:active {
+    background-color: #4a148c; /* Even darker purple */
+  }
+  
+  /* Paw Cursor for Navigation */
+  .nav-btn:hover {
+    cursor: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Paw_print_icon.svg'), auto;
+  }
+  
